@@ -8,7 +8,22 @@
 ** Last update Fri Oct  9 14:58:33 2015 zemax DUC
 */
 
+#include "my.h"
+
+int is_low(char c)
+{
+  if (c >= 'a' && c <= 'z')
+    return (1);
+  return (-1);
+}
+
 int	my_str_islower(char *str)
 {
-  return(0);
+  int i;
+
+  i = -1;
+  while (str[++i])
+    if (is_low(str[i]) == -1)
+      return (-1);
+  return (1);
 }

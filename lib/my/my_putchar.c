@@ -1,12 +1,14 @@
 /*
-** my_putchar.c for my_putchar in /home/lacroi_m/rendu/Piscine_C_J07/lib/my
+** my_putchar.c for  in /mnt/c/Users/ze/Desktop/gitshit/mylibC/lib/my/OG
 ** 
-** Made by zemax DUC
-** Login   <lacroi_m@epitech.net>
+** Made by DESKTOP-FQFT07H
+** Login   <maxime.lacroix@epitech.eu>
 ** 
-** Started on  Tue Oct  6 11:37:08 2015 zemax DUC
-** Last update Tue Oct  6 11:38:14 2015 zemax DUC
+** Started on  Tue Apr  3 17:31:50 2018 DESKTOP-FQFT07H
+** Last update Tue Apr  3 17:32:48 2018 DESKTOP-FQFT07H
 */
+
+#include "my.h"
 
 void	my_putchar(char c)
 {

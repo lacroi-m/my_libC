@@ -8,7 +8,22 @@
 ** Last update Fri Oct  9 12:55:10 2015 zemax DUC
 */
 
+#include "my.h"
+
+int is_num(char c)
+{
+  if (c >= '0' && c <= '9')
+    return (1);
+  return (-1);
+}
+
 int	my_str_isnum(char *str)
 {
-  return(0);
+  int i;
+
+  i = -1;
+  while (str[++i])
+    if (is_num(str[i]) == -1)
+      return (-1);
+  return (1);
 }

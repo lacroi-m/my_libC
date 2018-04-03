@@ -8,7 +8,22 @@
 ** Last update Fri Oct  9 14:59:35 2015 zemax DUC
 */
 
+#include "my.h"
+
+int is_upp(char c)
+{
+  if (c >= 'A' && c <= 'Z')
+    return (1);
+  return (-1);
+}
+
 int	my_str_isupper(char *str)
 {
-  return(0);
+  int i;
+
+  i = -1;
+  while (str[++i])
+    if (is_upp(str[i]) == -1)
+      return (-1);
+  return (1);
 }

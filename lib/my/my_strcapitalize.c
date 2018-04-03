@@ -8,7 +8,32 @@
 ** Last update Fri Oct  9 14:57:15 2015 zemax DUC
 */
 
-char	my_strcapitalize(char *str)
+#include "my.h"
+
+int is_low(char c)
 {
-  return(0);
+  if (c >= 'a' && c <= 'z')
+    return (1);
+  return (-1);
+}
+
+int is_upp(char c)
+{
+  if (c >= 'A' && c <= 'Z')
+    return (1);
+  return (-1);
+}
+
+void	my_strcapitalize(char *str)
+{
+  int i;
+
+  i = -1;
+  while (str[++i])
+  {
+    if (is_low(str[i]) == 1)
+      str[i] = str[i] + 32;
+    else if (is_upp(str[i]) == 1)
+      str[i] = str[i] - 32;
+  }
 }

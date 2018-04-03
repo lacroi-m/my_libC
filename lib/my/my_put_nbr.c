@@ -8,13 +8,13 @@
 ** Last update Fri Oct  9 14:52:39 2015 zemax DUC
 */
 
+#include "my.h"
+
 int	my_put_nbr(int nb)
 {
   int i;
 
   i = 0;
   while (i >= 0)
-    {
       my_putchar((nb / 10) % 10);
-    }
 }

@@ -8,7 +8,19 @@
 ** Last update Fri Oct  9 14:15:56 2015 zemax DUC
 */
 
-char	*my_strupcase(char *str)
+int is_low(char c)
 {
-  return(0);
+  if (c >= 'a' && c <= 'z')
+    return (1);
+  return (-1);
+}
+
+void	my_strupcase(char *str)
+{
+  int i;
+
+  i = -1;
+  while (str[++i])
+    if (is_low(str[i]) == 1)
+      str[i] = str[i] + 32;
 }

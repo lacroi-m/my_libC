@@ -1,23 +1,22 @@
 /*
-** my_strlen.c for strlen in /home/lacroi_m/rendu/Piscine_C_J04
+** my_strlen.c for  in /mnt/c/Users/ze/Desktop/gitshit/mylibC/lib/my/OG
 ** 
-** Made by zemax DUC
-** Login   <lacroi_m@epitech.net>
+** Made by DESKTOP-FQFT07H
+** Login   <maxime.lacroix@epitech.eu>
 ** 
-** Started on  Thu Oct  1 18:39:08 2015 zemax DUC
-** Last update Sat Oct  3 10:20:40 2015 zemax DUC
+** Started on  Tue Apr  3 17:34:05 2018 DESKTOP-FQFT07H
+** Last update Tue Apr  3 17:36:35 2018 DESKTOP-FQFT07H
 */
+
+#include "my.h"
 
 int	my_strlen(char *str)
 {
   int	i;
 
-  i = 0;
-  while (str[i] != '\0')
-    {
-      i = i + 1;
-      my_putnbr(i);
-    }
-  return(i);
+  i = -1;
+  if (str == NULL)
+    return (0);
+  while (str[++i])
+  return (i);
 }
-

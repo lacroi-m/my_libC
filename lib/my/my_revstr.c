@@ -8,6 +8,8 @@
 ** Last update Fri Oct  9 11:54:09 2015 zemax DUC
 */
 
+#include "my.h"
+
 char    *my_revstr(char *str)
 {
   int   i;

@@ -1,34 +1,29 @@
 /*
-** my_strcmp.c for strcmp in /home/lacroi_m/rendu/Piscine_C_J07/lib/my
+** my_strcmp.c for  in /mnt/c/Users/ze/Desktop/gitshit/mylibC/lib/my/OG
 ** 
-** Made by zemax DUC
-** Login   <lacroi_m@epitech.net>
+** Made by DESKTOP-FQFT07H
+** Login   <maxime.lacroix@epitech.eu>
 ** 
-** Started on  Fri Oct  9 12:13:17 2015 zemax DUC
-** Last update Fri Oct  9 14:57:45 2015 zemax DUC
+** Started on  Tue Apr  3 17:26:42 2018 DESKTOP-FQFT07H
+** Last update Tue Apr  3 17:26:44 2018 DESKTOP-FQFT07H
 */
 
-char	my_strcmp(char *s1, char *s2)
+#include "my.h"
+
+int	my_strcmp(char *s1, char *s2)
 {
   int   i;
-  int   a;
-  int   b;
-  int   c;
 
   i = 0;
-  a = 0;
-  b = 0;
+  if (s1 == NULL || s2 == NULL)
+    return (1);
+  if (my_strlen(s1) != my_strlen(s2))
+    return (1);
   while (s1[i] != '\0')
     {
-      a = a + s1[i];
+      if ((s1[i] != s2[i]) || s1 == '\0' || s2 == '\0')
+	return (1);
       i = i + 1;
     }
-  i = 0;
-  while (s2[i] != '\0')
-    {
-      b = b + s2[i];
-      i = i + 1;
-    }
-  c = a - b;
-  return (c);
+  return (0);
 }

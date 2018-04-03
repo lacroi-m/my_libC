@@ -1,16 +1,18 @@
 /*
-** my_strcpy.c for stringcopy in /home/lacroi_m/rendu/Piscine_C_J06
+** my_strcpy.c for  in /mnt/c/Users/ze/Desktop/gitshit/mylibC/lib/my/OG
 ** 
-** Made by zemax DUC
-** Login   <lacroi_m@epitech.net>
+** Made by DESKTOP-FQFT07H
+** Login   <maxime.lacroix@epitech.eu>
 ** 
-** Started on  Mon Oct  5 09:33:05 2015 zemax DUC
-** Last update Mon Oct  5 17:23:59 2015 zemax DUC
+** Started on  Tue Apr  3 17:33:28 2018 DESKTOP-FQFT07H
+** Last update Tue Apr  3 17:33:29 2018 DESKTOP-FQFT07H
 */
 
-char	*my_strcpy(char *dest, char *src)
+#include "my.h"
+
+char    *my_strcpy(char *dest, char *src)
 {
-  int i;
+  int   i;
 
   i = 0;
   while (src[i] != '\0')
@@ -18,5 +20,6 @@ char	*my_strcpy(char *dest, char *src)
       dest[i] = src[i];
       i = i + 1;
     }
+  dest[i] = '\0';
   return (dest);
 }

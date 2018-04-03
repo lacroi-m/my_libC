@@ -1,14 +1,28 @@
 /*
-** my_strncpy.c for strncpy in /home/lacroi_m/rendu/Piscine_C_J07/lib/my
+** my_strncpy.c for  in /mnt/c/Users/ze/Desktop/gitshit/mylibC/lib/my/OG
 ** 
-** Made by zemax DUC
-** Login   <lacroi_m@epitech.net>
+** Made by DESKTOP-FQFT07H
+** Login   <maxime.lacroix@epitech.eu>
 ** 
-** Started on  Fri Oct  9 14:13:41 2015 zemax DUC
-** Last update Fri Oct  9 14:59:58 2015 zemax DUC
+** Started on  Tue Apr  3 17:37:23 2018 DESKTOP-FQFT07H
+** Last update Tue Apr  3 17:37:24 2018 DESKTOP-FQFT07H
 */
 
-char	*my_strncpy(char *dest, char *to_find)
+#include "my.h"
+
+char	*my_strncpy(char *dest, char *src, int n)
 {
-  return(0);
+  int	i;
+  int	len;
+
+  i = 0;
+  len = my_strlen(src);
+  while (i < n)
+    {
+      dest[i] = src[i];
+      i++;
+    }
+  if (n > len)
+    dest[len] = '\0';
+  return (dest);
 }
